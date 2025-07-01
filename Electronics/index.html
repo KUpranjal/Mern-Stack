@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+  #root {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card div {
+    padding: 15px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+  .card h3 {
+    color: #007BFF;
+    margin: 0 0 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  @media (max-width: 1200px) {
+  #root {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+
+</head>
+<body>
+    <div id="root"></div>
+<script src="app.js"></script>    
+</body>
+</html>
