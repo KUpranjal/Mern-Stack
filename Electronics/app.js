@@ -74,7 +74,7 @@ for(let item of products){
     let descTag=document.createElement("p")
     image.src=item.image
     nameTag.innerText=`${item.name}`
-    priceTag.innerText=`${item.price}`
+    priceTag.innerText=`₹${item.price}`
     descTag.innerText=item.desc
     card.appendChild(image)
     card.appendChild(textContainer)
