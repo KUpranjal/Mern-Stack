@@ -2,7 +2,7 @@
     const background = document.getElementById('background');
     const themeToggle = document.getElementById('themeToggle');
     const sidebarLinks = document.querySelectorAll('.sidebar a');
-    const clickSound = document.getElementById('clickSound');
+    
 
     bgColorInput.addEventListener('input', () => {
       background.style.background = bgColorInput.value;
@@ -15,14 +15,6 @@
         : '🌓 Dark Mode';
     });
 
-    sidebarLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        clickSound.currentTime = 0;
-        clickSound.play();
-        sidebarLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-      });
-    });
 
     // Filters
     const blur = document.getElementById('blur');

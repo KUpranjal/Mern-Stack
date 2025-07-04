@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #751313;
   --text-color: #000000;
   --panel-color: rgba(116, 105, 105, 0.8);
 }
@@ -19,13 +19,13 @@ body {
 body.dark-theme {
   --bg-color: #121212;
   --text-color: #ffffff;
-  --panel-color: rgba(0, 0, 0, 0.75);
+  --panel-color: rgba(188, 56, 56, 0.75);
 }
 
 body.dark-theme .navbar,
 body.dark-theme .sidebar {
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
-  border-color: #00f2ff;
+  /* border-color: #00f2ff; */
 }
 
 body.dark-theme #themeToggle {
@@ -41,7 +41,7 @@ body.dark-theme #themeToggle {
   }
 }
 
-#background {
+#background { 
   background-color: #1abc9c;
   position: fixed;
   top: 0;
@@ -77,13 +77,13 @@ body.dark-theme #themeToggle {
   padding: 0 30px;
   z-index: 10;
   backdrop-filter: blur(8px);
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
   border-image: linear-gradient(90deg, #1abc9c, #3498db, #9b59b6) 1;
 }
 
 .navbar h1 {
   font-size: 20px;
-  margin: 0;
+  margin: 0px;
 }
 
 #themeToggle {
@@ -158,7 +158,7 @@ main {
   padding: 80px 40px 40px 40px;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .sidebar {
     display: none;
   }
@@ -175,4 +175,4 @@ main {
   #themeToggle {
     padding: 6px 10px;
   }
-}
+} */
