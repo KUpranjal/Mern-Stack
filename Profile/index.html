@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background"></div>
+
+  <nav class="navbar">
+    <h1>🎬 Theme Dashboard</h1>
+    <button id="themeToggle">🌓 Toggle Theme</button>
+  </nav>
+
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="#gifGrid">🎞️ Backgrounds</a></li>
+      <li><a href="#filters">🎛️ Filters</a></li>
+      <li><a href="#uploadInput">📁 Upload</a></li>
+      <li><a href="#">💾 Save Settings</a></li>
+    </ul>
+    <div class="color-picker">
+      <label for="bgColor">🎨 Pick BG Color:</label>
+      <input type="color" id="bgColor" value="#1abc9c">
+    </div>
+  </aside>
+
+  <main>
+  
+
+    <section class="controls" id="filters">
+      <h2>Filters</h2>
+      <label>Blur <input type="range" id="blur" min="0" max="10" value="0" /></label>
+      <label>Brightness <input type="range" id="brightness" min="50" max="150" value="100" /></label>
+      <label>Contrast <input type="range" id="contrast" min="50" max="150" value="100" /></label>
+      <button id="resetBtn">🔁 Reset</button>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Created by Pranjal 🚀</h3>
+  </footer>
+ <script src="app.js"></script>
+</body>
+</html>
