@@ -66,4 +66,4 @@ class Boat extends Vehicle{
     }
 }
 let b1=new Boat(true,true,true,"Water","Grey","Diesel")
-console.log(b1)
+console.log(b1)7
