@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animated Box</title>
+  <style>
+    #container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: steelblue;
+      position: absolute;
+      transition: all 0.5s ease;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <div id="box"></div>
+</div>
+
+<!-- <script>
+  const box = document.getElementById("box");
+  const container = document.getElementById("container");
+
+  function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+
+  function moveResizeAndColorBox() {
+    const containerWidth = container.clientWidth;
+    const containerHeight = container.clientHeight;
+
+    const newWidth = Math.floor(Math.random() * 150) + 50; // 50–200px
+    const newHeight = Math.floor(Math.random() * 150) + 50;
+
+    const maxX = containerWidth - newWidth;
+    const maxY = containerHeight - newHeight;
+
+    const newLeft = Math.floor(Math.random() * maxX);
+    const newTop = Math.floor(Math.random() * maxY);
+
+    const newColor = getRandomColor();
+
+    box.style.width = newWidth + "px";
+    box.style.height = newHeight + "px";
+    box.style.left = newLeft + "px";
+    box.style.top = newTop + "px";
+    box.style.backgroundColor = newColor;
+  }
+
+  setInterval(moveResizeAndColorBox, 2000);
+</script> -->
+
+</body>
+</html>
