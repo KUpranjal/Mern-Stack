@@ -1,31 +1,31 @@
-// let element=document.getElementById("container")
-// console.log(element)
+let element=document.getElementById("container")
+console.log(element)
 
 
-// let element=document.getElementsByClassName("xyz")
-// console.log(element)
+let element1=document.getElementsByClassName("xyz")
+console.log(element)
 
 
-// let element=document.getElementsByTagName("p")
-// console.log(element)
-
-
-
-// let element=document.querySelector("#container")
-// console.log(element)
+let element2=document.getElementsByTagName("p")
+console.log(element)
 
 
 
-// let element=document.querySelectorAll("#container")
-// console.log(element)
+let element3=document.querySelector("#container")
+console.log(element)
 
 
-// let element=document.querySelectorAll("p")
-// console.log(element)
+
+let element4=document.querySelectorAll("#container")
+console.log(element)
 
 
-// let element=document.querySelectorAll(".xyz")
-// console.log(element)
+let element5=document.querySelectorAll("p")
+console.log(element)
+
+
+let element6=document.querySelectorAll(".xyz")
+console.log(element)
 
 
 
